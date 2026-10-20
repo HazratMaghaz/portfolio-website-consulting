@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08080a">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Contact Hazrat Maghaz for bioinformatics consulting, genomics and transcriptomics analysis, biomedical AI and computational drug discovery collaborations.">
+  <title>Contact — Hazrat Maghaz | Bioinformatics Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a href="#main" class="contact-back" style="position:absolute;left:-9999px;top:0" onfocus="this.style.left='1rem'" onblur="this.style.left='-9999px'">Skip to contact form</a>
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Hazrat Maghaz consulting home"><span class="brand-monogram">HM</span><span class="brand-name">Hazrat Maghaz</span></a>
+      <ul class="nav-list">
+        <li><a href="index.html#story">About</a></li><li><a href="index.html#services">Expertise</a></li><li><a href="index.html#work">Work</a></li><li><a href="index.html#process">Approach</a></li><li><a class="nav-action" href="contact.html" aria-current="page">Contact ↗</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu"><span class="burger" aria-hidden="true"><span></span><span></span><span></span></span></button>
+    </nav>
+  </header>
+  <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="index.html">Home</a><a href="index.html#services">Expertise</a><a href="index.html#work">Work</a><a href="index.html#process">Approach</a><a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+  <main id="main" class="contact-main container">
+    <section class="contact-intro">
+      <span class="eyebrow">Research inquiry / collaboration</span>
+      <h1 class="display contact-title">LET'S WORK<br>ON YOUR<br><span class="accent">RESEARCH.</span></h1>
+      <p class="contact-summary">Share the research question, data type, and support you're looking for. I can review the scope and discuss a practical computational workflow.</p>
+    </section>
+    <div class="contact-layout">
+      <section aria-labelledby="contact-details-title">
+        <span class="eyebrow">Direct contact</span>
+        <h2 id="contact-details-title" class="display" style="font-size:clamp(2.3rem,4.8vw,5rem);line-height:1.05;margin-top:1rem">START WITH<br>THE QUESTION.</h2>
+        <p class="contact-summary">You do not need to share raw patient data or confidential files in this initial inquiry. A short description is enough to begin.</p>
+        <dl class="contact-info">
+          <div class="contact-info-item"><dt>Email</dt><dd><a href="mailto:hazratmaghaz.research@gmail.com">hazratmaghaz.research@gmail.com ↗</a></dd></div>
+          <div class="contact-info-item"><dt>Research identity</dt><dd><a href="https://hazratmaghaz.tech/" target="_blank" rel="noopener noreferrer">hazratmaghaz.tech ↗</a></dd></div>
+          <div class="contact-info-item"><dt>GitHub</dt><dd><a href="https://github.com/HazratMaghaz" target="_blank" rel="noopener noreferrer">github.com/HazratMaghaz ↗</a></dd></div>
+        </dl>
+      </section>
+      <section class="contact-form-panel" aria-labelledby="form-title">
+        <span class="eyebrow">Project briefing</span>
+        <h2 id="form-title" style="margin-top:1rem">Tell me about your project.</h2>
+        <p class="form-note">Required fields are marked *. Submit your project inquiry securely using the form below. You will see a confirmation on this page when your message is received.</p>
+        <!-- Public Formspree form ID: not an API secret. Private credentials do not belong in client-side code. -->
+        <form id="inquiry-form" action="https://formspree.io/f/xvkznyjp" method="POST" data-form-endpoint="https://formspree.io/f/xvkznyjp">
+          <noscript><p class="form-note">JavaScript is disabled. Your inquiry will be submitted through Formspree and confirmed on its website.</p></noscript>
+          <div class="inquiry-grid">
+            <div class="field"><label for="contact-name">Your name *</label><input id="contact-name" name="name" autocomplete="name" placeholder="Full name" maxlength="120" required></div>
+            <div class="field"><label for="contact-email">Work email *</label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@organization.org" maxlength="200" required></div>
+            <div class="field"><label for="contact-org">Organization (optional)</label><input id="contact-org" name="organization" autocomplete="organization" placeholder="University / lab / company" maxlength="160"></div>
+            <div class="field"><label for="contact-area">Research area *</label><select id="contact-area" name="research_area" required><option value="">Choose an area</option><option>Bulk RNA-seq / Genomics</option><option>Single-cell Transcriptomics</option><option>Microbiome / Metagenomics</option><option>Biomedical AI / Machine Learning</option><option>Computational Drug Discovery</option><option>Scientific Software / Pipelines</option><option>Other or multidisciplinary</option></select></div>
+            <div class="field"><label for="contact-timescale">Preferred timeline</label><select id="contact-timescale" name="timeline"><option value="">Not sure yet</option><option>Within 2 weeks</option><option>2–6 weeks</option><option>1–3 months</option><option>Longer-term collaboration</option></select></div>
+            <div class="field"><label for="contact-data">Available data</label><input id="contact-data" name="data_available" placeholder="e.g., FASTQ, count matrix, WSI" maxlength="160"></div>
+            <div class="field wide"><label for="contact-message">Project overview *</label><textarea id="contact-message" name="message" rows="7" minlength="30" maxlength="4000" placeholder="What is the research objective? What analysis or outcome would be useful?" required></textarea><small>Describe the project at a high level. Please do not include patient identifiers, passwords or sensitive records.</small></div>
+          </div>
+          <div class="form-honeypot" aria-hidden="true"><label for="inquiry-website">Leave this field empty</label><input id="inquiry-website" type="text" name="_gotcha" autocomplete="off" tabindex="-1"></div>
+          <label class="agree"><input id="contact-consent" name="consent" type="checkbox" required><span>I understand that this form is for initial project discussion and will not send confidential research data or patient information.</span></label>
+          <div class="submit-row"><button class="submit-btn" id="submit-btn" type="submit">Send inquiry ↗</button><span class="muted" style="font-size:.83rem">Or <a href="mailto:hazratmaghaz.research@gmail.com" style="color:var(--accent-light);text-decoration:underline">email directly</a></span></div>
+          <p id="form-status" class="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="contact-foot container"><a class="brand" href="index.html"><span class="brand-monogram">HM</span><span class="brand-name">Hazrat Maghaz</span></a><span>Bioinformatics · Computational Biology · Biomedical AI</span><a class="contact-back" href="index.html">← Back to portfolio</a></footer>
+  <script src="contact.js" defer></script>
+</body>
+</html>
